@@ -42,3 +42,5 @@ Tracking net conversion will let us know if the warning message has any effect o
 The hypothesis behind this experiment is that the warning window that pops up in the experimental group may set clearer expectations and therefore reduce the number of students who become discouraged mid-trial and quit, without significantly reducing the number of students who actually do follow through past the free trial.
 
 If the experimental group shows a significantly higher retention rate, while avoiding a significantly negative change to the net conversion rate, this will support our hypothesis, and we will consider launching.
+
+##Measuring Standard Deviation
