@@ -156,4 +156,14 @@ After looking at the results of this A/B Test, my recommendation is that we do p
 
 Taken together, This shows that we were able to deter some users, but did not make any significant decrease on the number of users actually following through and pay for the course (i.e. those who had a fruitful and successful trial period).
 
+##Follow-up Experiment
 
+Audacity is interested increasing the number of students who follow through with their two week trial, so it will be worthwhile to further test things that can impact this. The preceding experiment tested whether warning students about time commitment might have an effect. However, another limiting factor worth considering might be a student's existing knowledge base.
+
+For this experiment, I would divide traffic into two groups. Users in the control group would get the same user experience Audacity users normally do when viewing the Course Overview page. However, in the experimental group, upon clicking on "Start free trial," students would be given a brief quiz of three questions on foundational material necessary for the course. If the student got all three correct, they would be taken to the registration page.
+
+If the student got any of them wrong, they would still be given the option to register, however they would also be given a specific recommendation on something to study instead (via an Audacity free course, or a known credible free alternative) to polish up on before enrolling.
+
+The hypothetical benefit of this approach is that it gives students who may be lacking in necessary skills a specific, tangible suggestion that they can improve on, and thus they may be likely to follow this advice.
+
+As this experiment centers largely around the same slice of user experience that our previous experiment did, we could use the same invartiant metrics (number of cookies, number of clicks, and click-through probability), and focus on the same evaluation metrics (gross conversion and net conversion). Just as with the previous experiment, we would be looking to significantly decrease gross conversion without decreasing our net conversion significantly.
