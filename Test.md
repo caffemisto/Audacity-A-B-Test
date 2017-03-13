@@ -41,6 +41,16 @@ Tracking net conversion will let us know if the warning message has any effect o
 
 The hypothesis behind this experiment is that the warning window that pops up in the experimental group may set clearer expectations and therefore reduce the number of students who become discouraged mid-trial and quit, without significantly reducing the number of students who actually do follow through past the free trial.
 
-If the experimental group shows a significantly higher retention rate, while avoiding a significantly negative change to the net conversion rate, this will support our hypothesis, and we will consider launching.
+The ideal results within the experimental group, that would lead us to launch the experiment live would be the following:
+
+1 - A significant increase in the retention rate, indicating that a higher percentage of people who enter the free trial are following through with the full two weeks.
+
+2 - A net conversion that does not significantly decrease, indicating that people who would otherwise finish the two weeks are not being turned away by the warning message.
+
+3 - A gross conversion rate that remains the same, or has a significantly lower value in the experimental group, indicating that it is having a warning effect. This metric is the least important however, as it does not take into account people finishing the two-week trial.
+
+###Unchosen Metrics
+
+**1. Number of User-IDs** - This is the number of users who enter the free trial. This would not work as an invariant metric, since it would likely be affected the warning message in the experimental group. It is also not useful as an evaluation metric, because the three that were chosen tell a more complete story of the effect of the experiment.
 
 ##Measuring Standard Deviation
