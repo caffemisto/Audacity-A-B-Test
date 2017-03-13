@@ -1,11 +1,6 @@
-Udacity Data Analyst Nanodegree
-Project 7 - A/B Testing
-Timothy Najmolhoda
-
-
+Udacity Data Analyst Nanodegree - Project 7 - A/B Testing - Timothy Najmolhoda
 
 This file contains the qualitative and quantitative analysis concerning our A/B Test.
-
 
 ##Metric Choice
 
@@ -54,3 +49,25 @@ The ideal results within the experimental group, that would lead us to launch th
 **1. Number of User-IDs** - This is the number of users who enter the free trial. This would not work as an invariant metric, since it would likely be affected the warning message in the experimental group. It is also not useful as an evaluation metric, because the three that were chosen tell a more complete story of the effect of the experiment.
 
 ##Measuring Standard Deviation
+
+The analytic standard deviation was calculated below, given a sample size of 5000 cookies, and the following data:
+
+Unique cookies to view page per day:	40000
+Unique cookies to click "Start free trial" per day:	3200
+Enrollments per day:	660
+Click-through-probability on "Start free trial":	0.08
+Probability of enrolling, given click:	0.20625
+Probability of payment, given enroll:	0.53
+Probability of payment, given click	0.1093125
+
+The equation used to calculate them was the following equation:
+
+square root ( ((probability) * (1 - probability)) / (5000 * Daily Average Ratio) )
+
+The following values were determined.
+
+**1. Gross Conversion** - .0202
+**2. Retention** - .0549
+**3. Net Conversion** - .0156
+
+As this data is using constrained measurements rather than non-parametric values, the analytic standard deviation should be reliable, and emprical values should not need to be used.
