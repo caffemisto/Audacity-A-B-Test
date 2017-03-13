@@ -1,4 +1,6 @@
-Udacity Data Analyst Nanodegree - Project 7 - A/B Testing - Timothy Najmolhoda
+Udacity Data Analyst Nanodegree<br>
+Project 7 - A/B Testing<br> 
+Timothy Najmolhoda
 
 This file contains the qualitative and quantitative analysis concerning our A/B Test.
 
@@ -66,8 +68,8 @@ square root ( ((probability) * (1 - probability)) / (5000 * Daily Average Ratio)
 
 The following values were determined.
 
-**1. Gross Conversion** - .0202
-**2. Retention** - .0549
+**1. Gross Conversion** - .0202<br>
+**2. Retention** - .0549<br>
 **3. Net Conversion** - .0156
 
 As this data is using constrained measurements rather than non-parametric values, the analytic standard deviation should be reliable, and emprical values should not need to be used.
