@@ -106,7 +106,7 @@ For my invariant metrics, I calculated and observed the following values:
 ###Number of Clicks on "Free trial"
 **Lower Bound** - .4959<br>
 **Upper Bound** - .5041<br>
-**Observed Value** .5005- 
+**Observed Value** .5005
 
 ###Click-through Probability
 **Lower Bound** - -.0013<br>
@@ -115,4 +115,27 @@ For my invariant metrics, I calculated and observed the following values:
 
 It appears that all of my invariant metrics are within their expected values, and that traffic was likely diverted correctly. These sanity checks were passed.
 
+##Effect Size Tests
 
+For my two remaining evaluation metrics, I calculated a 95% percent interval for the likely effect size of the change made in the experimental group. They were as follows:
+
+###Gross Conversion
+**Lower Bound** - -.0291<br>
+**Upper Bound** - -.0120
+
+###Net Conversion
+**Lower Bound** - -.0016<br>
+**Upper Bound** - .0019
+
+These results show that the changes in the experimental group had a negative effect on gross conversion that was both statistically significant and practically significant.
+
+They also indicate that in the experimental group there was neither a statistically or practically significant change to the net conversion rate.
+
+##Sign Tests
+
+Our sign tests (calculated using http://graphpad.com/quickcalcs/binomial1.cfm) yieleded the following p-values for a 95% confidence interval:
+
+**Gross Conversion** - .0026<br>
+**Net Conversion** - .6776<br>
+
+This indicates that the p-value of our gross conversion is indeed statistically significant, and the p-value for our net conversion is not statistically significant.
