@@ -139,3 +139,21 @@ Our sign tests (calculated using http://graphpad.com/quickcalcs/binomial1.cfm) y
 **Net Conversion** - .6776<br>
 
 This indicates that the p-value of our gross conversion is indeed statistically significant, and the p-value for our net conversion is not statistically significant.
+
+##Summary
+
+In this experiment, I opted not to use the Bonferroni correction. My logic behind this was that for my evaluation metrics, I was looking for a specific result from each category rather than just a showing of statistic impact from any of them. This, when combined with the fact that we only moved forward with two total evaluation metrics, minimized the potential impact of a false positive.
+
+Our results show that the decision to not use the Bonferroni correction was sound, as both the Effect Size Test and the Sign Test gave the same results, a significant negative statistical effect within the experiment group, and no significant observable effect on net conversion.
+
+##Recommendation
+
+After looking at the results of this A/B Test, my recommendation is that we do push our experiment live, for the following reasons:
+
+1 - The gross conversion rate in our experimental group was significantly lower than that in our control group. This significance was both statistical and practical. This meant that the changes in our experimental group were indeed discouraging some users who clicked on "Start free trial" from entering the two week trial.
+
+2 - The net conversion rate in our experimental group showed no significant difference from that in our control group. This meant that the changes in our experimental group were not reducing the rate at which people who made the initial click on "Start free trial" actually went on to finish the course's free trial.
+
+Taken together, This shows that we were able to deter some users, but did not make any significant decrease on the number of users actually following through and pay for the course (i.e. those who had a fruitful and successful trial period).
+
+
