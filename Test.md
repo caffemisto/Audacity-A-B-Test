@@ -24,7 +24,7 @@ Alternatively put, this is equal to the second invariant metric divided by the f
 ###Evaluation Metrics
 This A/B Test has three evaluation metrics. They are as follows:
 
-**1. Gross Conversion** - The number of unique cookies to enter the free trial period of a lesson divided by the number of unique cookies to click on the "Start free trial" button.
+**1. Gross Conversion** - The number of unique cookies to enter the free trial period of a lesson divided by the number of unique cookies to enroll in the free trial.
 
 The difference between the control and experimental groups is a small window questioning how much time potential students have available after clicking on "Start free trial." If they indicate a number below five hours, a message will appear discouraging them to start the free trial and suggesting they try some free materials. Tracking gross conversion will allow us to see what effect this has on the percent of students who go through with joining the free trial period. 
 
@@ -44,7 +44,9 @@ The ideal results within the experimental group, that would lead us to launch th
 
 2 - A net conversion that does not significantly decrease, indicating that people who would otherwise finish the two weeks are not being turned away by the warning message.
 
-3 - A gross conversion rate that remains the same, or has a significantly lower value in the experimental group, indicating that it is having a warning effect. This metric is the least important however, as it does not take into account people finishing the two-week trial.
+3 - A significant decrease in the gross conversion, indicating that people that some users are in fact being turned away from the warning message.
+
+The combination of these metrics will indicate that the pop-up message in the experimental group is effective in discouraging some users from entering the course, but that the effect is focused largely on the people who would not otherwise complete the two-week trial period.
 
 ###Unchosen Metrics
 
@@ -73,3 +75,44 @@ The following values were determined.
 **3. Net Conversion** - .0156
 
 As this data is using constrained measurements rather than non-parametric values, the analytic standard deviation should be reliable, and emprical values should not need to be used.
+
+##Sizing
+
+For this evaluation, I opted not to do the Bonferroni correction. I made this decision based on the fact I was looking for a specific outcome in each of my evaluation metrics, therefore my metrics are inherently conservative, and should not need the extra caution of the Bonferroni correction.
+
+After putting the values in the sample size calculator (http://www.evanmiller.org/ab-testing/sample-size.html) and multiplying by the likelihood ratios for each event, I received the following necessary sample sizes in pageviews for each group:
+
+**1. Gross Conversion** - 322,937.5<br>
+**2. Retention** - 3,368,909.1<br>
+**3. Net Conversion** - 342,662.5
+
+At first glance, that number for retention is untennably high. At 40,000 pageviews per day, It would take over 75 days per group if we were to divert 100% of our traffic, which is far longer than we want to use. So we will be forced to focus on gross coversion and net conversion.
+
+By doubling the higher of those two numbers, we can determine that we will need a total of **685325** pageviews in order to ensure that our experiment provides the requesite amount statistical information.
+
+##Duration & Exposure
+
+I felt this experiment did not pose a strong risk to traffic, although some effect would presumably be noticeable. That said, because of the number of pageviews necessary, using a small percentage of the traffic for the experiment would take far too long. Therefore, It was decided to divert 75% of the traffic for this experiment. At that rate, we would be able to achieve 685,325 pageviews within 23 days.
+
+##Sanity Checks
+
+For my invariant metrics, I calculated and observed the following values:
+
+###Number of Cookies
+**Lower Bound** - .4988<br>
+**Upper Bound** - .5012<br>
+**Observed Value** .5006- 
+
+###Number of Clicks on "Free trial"
+**Lower Bound** - .4959<br>
+**Upper Bound** - .5041<br>
+**Observed Value** .5005- 
+
+###Click-through Probability
+**Lower Bound** - -.0013<br>
+**Upper Bound** - .0013<br>
+**Observed Value** - .0000 
+
+It appears that all of my invariant metrics are within their expected values, and that traffic was likely diverted correctly. These sanity checks were passed.
+
+
