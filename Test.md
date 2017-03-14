@@ -4,6 +4,11 @@ Timothy Najmolhoda
 
 This file contains the qualitative and quantitative analysis concerning our A/B Test.
 
+##References
+
+I referenced several threads on the Udacity forum for this project, particularly those in this subforum:
+https://discussions.udacity.com/c/nd002-p7-design-an-a-b-test
+
 ##Metric Choice
 
 ###Invariant Metrics
