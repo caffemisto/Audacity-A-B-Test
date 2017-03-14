@@ -85,7 +85,7 @@ These analytical estimates should be reliable. Our unit of diversion are cookies
 
 ##Sizing
 
-For this evaluation, I opted not to do the Bonferroni correction. I made this decision based on the fact I was looking for a specific outcome in each of my evaluation metrics, therefore my metrics are inherently conservative, and should not need the extra caution of the Bonferroni correction.
+For this evaluation, I opted not to do the Bonferroni correction. I made this decision based on the fact I was looking for a specific outcome in each of my evaluation metrics, therefore my metrics are inherently conservative, and should not need the extra caution of the Bonferroni correction (For further detail, please refer to the Summary Section).
 
 After putting the values in the sample size calculator (http://www.evanmiller.org/ab-testing/sample-size.html) and multiplying by the likelihood ratios for each event, I received the following necessary sample sizes in pageviews for each group:
 
@@ -157,7 +157,7 @@ This indicates that the p-value of our gross conversion is indeed statistically 
 
 ##Summary
 
-In this experiment, I opted not to use the Bonferroni correction. My logic behind this was that for my evaluation metrics, I was looking for a specific result from each category rather than just a showing of statistic impact from any of them. This, when combined with the fact that we only moved forward with two total evaluation metrics, minimized the potential impact of a false positive.
+In this experiment, I opted not to use the Bonferroni correction. I did this because in this experiment, I had two evaluation metrics, and I was interested in tracking both of theirs. That is to say, in order to recommend launching this experiment live, I wanted to demonstrate a significant decrease in gross conversion AND not show any evidence of a significant change in net conversion. Since I was looking for both metrics to match my expectations, the experiment was at greater risk of a Type II error (failing to reject a false null hypthothesis) than a Type I error (rejecting a true null hypothesis). As the Bonferroni reduces Type I errors and makes Type II errors more likely, I did not use it.
 
 Our results show that the decision to not use the Bonferroni correction was sound, as both the Effect Size Test and the Sign Test gave the same results, a significant negative statistical effect within the experiment group, and no significant observable effect on net conversion.
 
