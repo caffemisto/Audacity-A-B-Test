@@ -148,7 +148,7 @@ They also indicate that in the experimental group there was neither a statistica
 
 ##Sign Tests
 
-Our sign tests (calculated using http://graphpad.com/quickcalcs/binomial1.cfm) yieleded the following p-values for a 95% confidence interval:
+Our sign tests (calculated using http://graphpad.com/quickcalcs/binomial1.cfm) yielded the following p-values for a 95% confidence interval:
 
 **Gross Conversion** - .0026<br>
 **Net Conversion** - .6776<br>
@@ -163,13 +163,13 @@ Our results show that the decision to not use the Bonferroni correction was soun
 
 ##Recommendation
 
-After looking at the results of this A/B Test, my recommendation is that we do push our experiment live, for the following reasons:
+After looking at the results of this A/B Test, my recommendation is that we do not push our experiment live. This is based on the following observations:
 
 1 - The gross conversion rate in our experimental group was significantly lower than that in our control group. This significance was both statistical and practical. This meant that the changes in our experimental group were indeed discouraging some users who clicked on "Start free trial" from entering the two week trial.
 
-2 - The net conversion rate in our experimental group showed no significant difference from that in our control group. This meant that the changes in our experimental group were not reducing the rate at which people who made the initial click on "Start free trial" actually went on to finish the course's free trial.
+2 - The net conversion rate in our experimental group showed no statistical significant difference from that in our control group. However, our confidence interval above did cross over into the threshold of practical significance (-.0075). 
 
-Taken together, This shows that we were able to deter some users, but did not make any significant decrease on the number of users actually following through and pay for the course (i.e. those who had a fruitful and successful trial period).
+Taken together, this shows that the changes to the experimental group did statistically impact the gross conversion rate, but there is also evidence that it may have had a negative practical effect on net conversion that Audacity wants to avoid. Based on these results, my recommendation is that we continue to test other means that that affect gross conversion rate whilst more clearly avoiding negative consequences to our negative conversion rate.
 
 ##Follow-up Experiment
 
