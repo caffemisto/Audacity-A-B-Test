@@ -99,7 +99,15 @@ By doubling the higher of those two numbers, we can determine that we will need 
 
 ##Duration & Exposure
 
-I felt this experiment did not pose a strong risk to traffic, although some effect would presumably be noticeable. That said, because of the number of pageviews necessary, using a small percentage of the traffic for the experiment would take far too long. Therefore, It was decided to divert 75% of the traffic for this experiment. At that rate, we would be able to achieve 685,325 pageviews within 23 days.
+There are three sorts of risk to consider here.
+
+Firstly, we can consider the potential risks to revenue if the experimental change has a very negative effect. Here that seems unlikely since the only change is a simple pop-up box that will only appear for a portion of the experimental group. Still, it is worth considering that the experiment may have an effect other than what we hope for and anticipate.
+
+Secondly, we must consider whether there is any sensitive data being tracked. It seems that is not the case here. We are only tracking by cookies and user ids, and when it comes to the ladder, we are not attaching it to any sensitive personal information such as sexuality or private health data.
+
+Thirdly, we should consider whether the experiment will have any potential adverse effects on users, such as emotional damage. Here there is a potential that a user will become discouraged upon seeing a message that the course is not a good fit for them, however this potential is likely more or less equal to the discouragement that would occur from joining the free trial and finding it to be too much work. Moreveover, the level of discouragement it would provide would be accompanied by a suggestion for improvement, and would almost certainly not lead to longterm psychological effects.
+
+With all of these in mind, I decided it was prudent to proceed with the experiment and dedicate a large portion of our traffic toward it. Therefore, It was decided to divert 75% of the traffic for this experiment. At that rate, we would be able to achieve 685,325 pageviews within 23 days.
 
 ##Sanity Checks
 
