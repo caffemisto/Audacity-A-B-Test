@@ -81,7 +81,7 @@ The following values were determined.
 **2. Retention** - .0549<br>
 **3. Net Conversion** - .0156
 
-As this data is using constrained measurements rather than non-parametric values, the analytic standard deviation should be reliable, and emprical values should not need to be used.
+These analytical estimates should be reliable. Our unit of diversion are cookies with further tracking by user-id at the point of registration. The evaluation metrics are measuring rates of users, with the rates being taken out of user-ids (retention) and cookies (gross and net conversion). As these match, we can rely on the analytic estimates and do not need to calculate the empirical values.
 
 ##Sizing
 
