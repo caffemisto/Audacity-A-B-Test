@@ -57,7 +57,7 @@ The combination of these metrics will indicate that the pop-up message in the ex
 
 **1. Number of User-IDs** - This is the number of users who enter the free trial. This would not work as an invariant metric, since it would likely be affected by the warning message in the experimental group. 
 
-It is also not useful as an evaluation metric. Our goals are to see a) if users are being diverted from starting the free trial and b) if these users are ones who would otherwise be finishing the two-week trial. This point of data only tells us the former, and without an accompany value for the the number of users who make it to day 15, it is not useful for getting the information we need from the data. The three evaluation metrics we chose tell a much more complete story.
+It is also not useful as an evaluation metric. Our goals are to see a) if users are being diverted from starting the free trial and b) if these users are ones who would otherwise be finishing the two-week trial. This point of data only tells us the former, and without an accompanying value for the the number of users who make it to day 15, it is not useful for getting the information we need from the data. The three evaluation metrics we chose tell a much more complete story.
 
 ##Measuring Standard Deviation
 
@@ -81,11 +81,11 @@ The following values were determined.
 **2. Retention** - .0549<br>
 **3. Net Conversion** - .0156
 
-These analytical estimates should be reliable. Our unit of diversion are cookies with further tracking by user-id at the point of registration. The evaluation metrics are measuring rates of users, with the rates being taken out of user-ids (retention) and cookies (gross and net conversion). As these match, we can rely on the analytic estimates and do not need to calculate the empirical values.
+These analytical estimates should be reliable. Our unit of diversion are cookies with further tracking by user-id at the point of registration. The evaluation metrics are measuring rates of users, with the rates being taken out of user-ids (retention) and cookies (gross and net conversion). As these are matching measurement categories, we can rely on the analytic estimates and do not need to calculate the empirical values.
 
 ##Sizing
 
-For this evaluation, I opted not to do the Bonferroni correction. I made this decision based on the fact I was looking for a specific outcome in each of my evaluation metrics, therefore my metrics are inherently conservative, and should not need the extra caution of the Bonferroni correction (For further detail, please refer to the Summary Section).
+For this evaluation, I opted not to do the Bonferroni correction. I made this decision based on the fact I was looking for a specific outcome in each of my evaluation metrics, therefore my metrics are inherently conservative, and should not need the extra caution of the Bonferroni correction in avoiding Type 1 errors. Instead, I chose not to use it in order to minimize Type II errors. (For further detail, please refer to the Summary Section).
 
 After putting the values in the sample size calculator (http://www.evanmiller.org/ab-testing/sample-size.html) and multiplying by the likelihood ratios for each event, I received the following necessary sample sizes in pageviews for each group:
 
@@ -167,7 +167,7 @@ After looking at the results of this A/B Test, my recommendation is that we do n
 
 1 - The gross conversion rate in our experimental group was significantly lower than that in our control group. This significance was both statistical and practical. This meant that the changes in our experimental group were indeed discouraging some users who clicked on "Start free trial" from entering the two week trial.
 
-2 - The net conversion rate in our experimental group showed no statistical significant difference from that in our control group. However, our confidence interval above did cross over into the threshold of practical significance (-.0075). 
+2 - The net conversion rate in our experimental group showed no statistical significant difference from that in our control group. However, our confidence interval above did cross over into the threshold of practical significance (-.0075) that we were looking to avoid. 
 
 Taken together, this shows that the changes to the experimental group did statistically impact the gross conversion rate, but there is also evidence that it may have had a negative practical effect on net conversion that Audacity wants to avoid. Based on these results, my recommendation is that we continue to test other means that that affect gross conversion rate whilst more clearly avoiding negative consequences to our negative conversion rate.
 
