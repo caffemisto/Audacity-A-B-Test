@@ -57,7 +57,7 @@ The combination of these metrics will indicate that the pop-up message in the ex
 
 **1. Number of User-IDs** - This is the number of users who enter the free trial. This would not work as an invariant metric, since it would likely be affected by the warning message in the experimental group. 
 
-It is also not useful as an evaluation metric. Our goals are to see a) if users are being diverted from starting the free trial and b) if these users are ones who would otherwise be finishing the two-week trial. This point of data only tells us the former, and without an accompanying value for the the number of users who make it to day 15, it is not useful for getting the information we need from the data. The three evaluation metrics we chose tell a much more complete story.
+It is also not optimal for use as an evaluation metric. It does give us a window into the effect that the experimental changes are having on people entering the free trial. However, as a metric for doing so, it is weaker than gross conversion rate, since it does so in a global rather than normalised manner. As such, we will use gross conversion rate to glean this particular data.
 
 ##Measuring Standard Deviation
 
